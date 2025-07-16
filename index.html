@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Simulador de Areia</title>
+</head>
+<body>
+    <div id="controls">
+        <h3>Controles</h3>
+        
+        <div class="control-group">
+            <label for="gravity">Gravidade:</label>
+            <input type="range" id="gravity" min="1" max="20" value="8">
+            <span id="gravityValue">8</span>
+        </div>
+        
+        <div class="control-group">
+            <label for="brushSize">Tamanho do Pincel:</label>
+            <input type="range" id="brushSize" min="1" max="50" value="10">
+            <span id="brushSizeValue">10</span>
+        </div>
+        
+        <div class="control-group">
+            <label for="density">Densidade:</label>
+            <input type="range" id="density" min="0" max="1" step="0.1" value="0.7">
+            <span id="densityValue">0.7</span>
+        </div>
+        
+        <div class="buttons">
+            <button id="clearBtn">Limpar (R)</button>
+            <button id="pauseBtn">Pausar (P)</button>
+        </div>
+    </div>
+    
+    <canvas id="canvas"></canvas>
+    <script src="main.js"></script>
+</body>
+</html>
